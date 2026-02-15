@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "learning node js",
+  "keywords": [
+    "learning",
+    "backend"
+  ],
+  "homepage": "https://github.com/abhiii9vvv/NodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/abhiii9vvv/NodeJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhiii9vvv/NodeJS.git"
+  },
+  "license": "ISC",
+  "author": "Abhinav Tiwary",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
