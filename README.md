@@ -14,7 +14,7 @@ Open: http://localhost:3000/health
 ## Structure
 
 - src/app.js - Express app setup
-- src/server.js - App entry point
+- src/index.js - App entry point
 - src/routes - Route definitions
 - src/controllers - Route handlers
 - src/middlewares - Error handling
