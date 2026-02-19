@@ -1,14 +1,21 @@
-const { error } = require("console");
-const fs=require("fs");
-console.log("statrting");
-// fs.writeFileSync("aboutME.txt","My name is abhinav");
+const express = require('express');
 
-fs.writeFile("me2.txt","av9 is ?? ",()=>{
-    console.log("done")
-    fs.readFile("me2.txt",(error,data)=>{
-        console.log(error,data.toString());
-    });
+const app = express();
+
+const port = 3000;
+
+app.use(express.static("public"));
+
+app.get('/',(req,res)=>{
+    console.log("Hey its a get request");
+    res.send('Hello world');
 });
 
-console.log("ending");
+app.post('/',(req,res)=>{
+    console.log("Hey its a Post request");
+    res.send('Hello Abhinav');
+});
 
+app.listen(port,()=>{
+    console.log(`listening on port ${port}`)
+})
